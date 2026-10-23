@@ -1,0 +1,116 @@
+.template-content
+   font-family: 'Zing Script Rust SB Demo Base', sans-serif
+   background: var(--color-bg)
+   font-weight: 100
+   font-size: 20px
+   line-height: 100%
+   color: var(--color-text-black)
+   overflow: hidden
+   position: relative
+   display: flex
+   flex-direction: column
+   min-height: 100vh
+   --color-text-black: #000000
+   --color-text-dark: #0f0f0f
+   --color-text-brown: #3f3f3f
+   --color-text-white: #FFFFFF
+   --color-text-red: #C0392B
+   --color-text-darkred: #911114
+   --color-bg: #fff9f2
+   --color-bg-secondary: #f6e1c9
+   --space-calendar-top: clamp(30px, calc(17.8000px + 3.8125vw), 91px)
+   --space-calendar-bottom: clamp(49px, calc(35.6000px + 4.1875vw), 116px)
+   --space-personal-greeting-top: clamp(26px, calc(9.2000px + 5.2500vw), 110px)
+   --space-personal-greeting-bottom: clamp(92px, calc(106.4000px + -0.7500vw), 104px)
+   --space-about-top: clamp(39px, calc(28.8000px + 3.1875vw), 90px)
+   --space-about-bottom: clamp(39px, calc(24.2000px + 4.6250vw), 113px)
+   --space-faq-top: clamp(46px, calc(38.0000px + 2.5000vw), 86px)
+   --space-faq-bottom: clamp(42px, calc(35.2000px + 2.1250vw), 76px)
+   --space-guest-top: clamp(43px, calc(31.4000px + 3.6250vw), 101px)
+   --space-guest-bottom: clamp(59px, calc(51.8000px + 2.2500vw), 95px)
+   --space-contact-top: clamp(0px, calc(-7.0000px + 2.1875vw), 35px)
+   --space-contact-bottom: clamp(0px, calc(-9.2000px + 2.8750vw), 46px)
+   --space-footer-top: clamp(10px, calc(7.4000px + 0.8125vw), 23px)
+   --space-footer-bottom: clamp(20px, calc(14.0000px + 1.8750vw), 50px)
+   --space-dress-top: clamp(40px, calc(33.0000px + 2.1875vw), 75px)
+   --space-dress-bottom: clamp(50px, calc(38.0000px + 3.7500vw), 110px)
+   --space-story-top: clamp(39px, calc(37.4000px + 0.5000vw), 47px)
+   --space-story-bottom: clamp(56px, calc(41.2000px + 4.6250vw), 130px)
+   --space-timing-top: clamp(31px, calc(20.4000px + 3.3125vw), 84px)
+   --space-timing-bottom: clamp(61px, calc(51.2000px + 3.0625vw), 110px)
+.template-content
+   a
+      text-decoration: none
+      box-sizing: border-box
+      transition: 0.5s !important
+      &:hover
+         color: var(--color-text-red)
+   ul
+      margin: 0
+      padding: 0
+      list-style-type: none
+   a
+      transition: color 0.5s ease
+      box-sizing: border-box
+   button
+      cursor: pointer
+      box-sizing: border-box
+   textarea
+      transition: border 0.5s
+      box-sizing: border-box
+      &:focus
+         transition: border 0.5s
+         outline: none
+   input
+      transition: 0.5s
+      box-sizing: border-box
+      &:disabled
+         pointer-events: none
+         opacity: 0.5
+      &:focus
+         transition: 0.5s
+      &:focus-visible
+         outline: initial
+   input::-webkit-input-placeholder
+      color: #2C2420 !important
+   input::-moz-placeholder
+      color: #2C2420 !important
+   input:-ms-input-placeholder
+      color: #2C2420 !important
+   input:-moz-placeholder
+      color: #2C2420 !important
+   div
+      box-sizing: border-box
+.container
+   padding: 0 15px
+   width: 100%
+   max-width: 1437px
+   margin: 0 auto
+.d-flex, .q
+   display: flex
+.hide
+   display: none !important
+.title1
+   margin: 0
+   font-size: clamp(32px, calc(19.2px + 4vw), 96px)
+   font-weight: 100
+   color: var(--color-text-brown)
+   line-height: 121%
+   width: 100%
+   max-width: 620px
+.title2
+   margin: 0
+   font-size: clamp(32px, calc(19.2px + 4vw), 96px)
+   font-weight: 100
+   color: var(--color-text-brown)
+   line-height: 121%
+   width: 100%
+   max-width: 800px
+.title3
+   font-size: 64px
+   font-weight: 100
+   color: var(--color-text-black)
+   line-height: 121%
+.prog__content, .timing__tabs, .map__tabs, .menu ul
+   scrollbar-width: thin
+   scrollbar-color: transparent transparent

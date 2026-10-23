@@ -1,0 +1,13 @@
+<svg class="block-border" xmlns="http://www.w3.org/2000/svg">
+   <rect
+      x="1"
+      y="1"
+      width="calc(100% - 2px)"
+      height="calc(100% - 2px)"
+      rx="19"
+      fill="none"
+      stroke="#C0392B"
+      stroke-width="2"
+      stroke-dasharray="15 14"
+   />
+</svg>

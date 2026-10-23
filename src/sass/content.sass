@@ -1,0 +1,1542 @@
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after, .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after
+   display: none
+.main
+   position: relative
+   &__logo
+      p
+         font-size: 35px
+         line-height: 100%
+         font-weight: 100
+         color: var(--color-text-dark)
+         margin: 0
+   &__head
+      background: var(--color-text-white)
+      padding: 22px 0
+      .container 
+         max-width: 1180px
+   &__row
+      position: relative
+      z-index: 2
+      display: flex
+      align-items: center
+      justify-content: space-between
+      ul
+         display: flex
+         flex-wrap: wrap
+         align-items: center
+         gap: 35px
+         li
+            display: flex
+            align-items: center
+            a
+               font-size: 18px
+               line-height: 100%
+               font-weight: 400
+               color: var(--color-text-dark)
+   &__wrap
+      padding: 189px 0 442px
+      position: relative
+   &__border1 
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      object-fit: cover
+      object-position: center
+   &__border2
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 100%
+      object-fit: cover
+      height: 12px
+      object-position: center
+   &__content 
+      text-align: right
+      position: relative
+      width: 100%
+      max-width: 680px
+   &__data
+      font-size: 24px
+      font-weight: 100
+      color: var(--color-text-black)
+      line-height: 100%
+      display: block
+      margin: 7px -34px 0 0
+   &__box
+      position: relative
+      .title1
+         text-align: right
+         margin-left: auto
+   &__info
+      position: relative
+      z-index: 2
+      width: 100%
+      max-width: 353px
+      background: url("../img/main-border.svg") center / cover no-repeat
+      font-size: clamp(14px, calc(12.8000px + 0.3750vw), 20px)
+      background-color: var(--color-text-white)
+      font-weight: 100
+      color: var(--color-text-darkred)
+      padding: 25px 20px
+      display: flex
+      align-items: center
+      justify-content: center
+      margin-bottom: -3px
+      margin-left: auto
+      text-align: center
+      border-radius: 10px
+      overflow: hidden
+   &__fig1 
+      position: absolute
+      top: -78px
+      width: 129px
+      height: 77px
+      object-fit: cover
+      object-position: center
+      left: 0
+   &__fig2
+      position: absolute
+      top: 31px
+      left: 21px
+      object-fit: cover
+      object-position: center
+      width: 329px
+      height: 352px
+   &__fig3
+      position: absolute
+      bottom: -279px
+      object-fit: cover
+      object-position: center
+      left: 368px
+      width: 281px
+      height: 288px
+   &__fig4
+      position: absolute
+      bottom: -321px
+      object-fit: cover
+      object-position: center
+      left: 542px
+      width: 319px
+      height: 319px
+   &__love 
+      position: absolute
+      left: 104px
+      bottom: -181px
+      width: 303px
+      height: 205px
+      object-fit: cover
+      object-position: center
+   &__photo1 
+      width: 131px
+      position: absolute
+      bottom: -165px
+      object-fit: cover
+      object-position: center
+      left: 463px
+      height: 131px
+      border-radius: 50% 
+      overflow: hidden
+   &__photo2
+      position: absolute
+      bottom: -246px
+      left: 613px
+      height: 170px
+      width: 170px
+      object-fit: cover
+      object-position: center
+      border-radius: 50% 
+      overflow: hidden
+   &__pic
+      position: absolute
+      top: -198px
+      right: 25px
+      width: 665px
+      height: 929px
+      object-fit: cover
+      object-position: center
+      z-index: 1
+   &__cloud
+      z-index: 0
+      position: absolute
+      width: 580px
+      height: 390px
+      top: -20px
+      right: 41px
+      object-fit: cover
+      object-position: center
+.calendar
+   position: relative
+   overflow: hidden
+   padding: var(--space-calendar-top) 0 var(--space-calendar-bottom) 0
+   background: var(--color-bg-secondary)
+   .title2 
+      font-size: clamp(32px, calc(25.6000px + 2.0000vw), 64px)
+      line-height: 113%
+   &__area
+      overflow: hidden
+      position: relative
+      z-index: 2
+      text-align: center
+      grid-area: area
+      width: 100%
+      max-width: 100%
+      img
+         position: absolute
+         z-index: 0
+         width: 100%
+         height: 100%
+         object-fit: cover
+         object-position: center
+         top: 0
+         left: 0
+   &__box
+      position: relative
+      width: 100%
+      max-width: 420px
+      margin: 0 auto
+   &__head
+      display: flex
+      gap: 35px
+      margin-bottom: 32px
+      position: relative
+      z-index: 2
+      div
+         text-align: center
+         color: var(--color-text-black)
+         font-size: 24px
+         font-weight: 700
+         line-height: 100%
+         text-transform: uppercase
+   &__day
+      text-align: center
+      color: var(--color-text-black)
+      position: relative
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 27px
+      font-size: 24px
+      font-weight: 600
+      opacity: 0.34
+      line-height: 100%
+      &.active
+         font-size: 40px
+         font-weight: 600
+         color: var(--color-text-red)
+         line-height: 100%
+         opacity: 1
+         &:after
+            content: "" 
+            z-index: 1 
+            position: absolute 
+            top: 50% 
+            left: 50% 
+            margin-left: -36.5px 
+            margin-top: -26px 
+            width: 74px 
+            height: 53px 
+            background: url(../img/bor.svg) center / cover no-repeat 
+            background-color: rgba(192, 57, 43, 0.05) 
+            border-radius: 11px 
+      &:last-child
+         margin-right: auto
+   &__body
+      gap: 26px 37px
+      display: flex
+      flex-wrap: wrap
+   &__wrap
+      // display: flex
+      // align-items: flex-start
+      // justify-content: center
+      display: grid
+      grid-template-columns: minmax(0, 45%) minmax(0, 45.7%)
+      grid-template-areas: "content area"
+      justify-content: center
+      align-items: start
+   &__content
+      // width: 100%
+      // max-width: 45%
+      grid-area: content
+      width: 100%
+      max-width: 100%
+      h2
+         line-height: 98%
+         margin-bottom: 57px
+   &__text
+      font-size: clamp(18px, calc(16.8000px + 0.3750vw), 24px)
+      font-weight: 100
+      color: var(--color-text-black)
+      line-height: 199%
+      padding: 46px 55px 36px 55px
+      border-radius: 19px
+      background: url(../img/main-border.svg) center / cover no-repeat
+      background-color: rgba(255,255,255,0.39)
+      margin: 0
+.timer
+   display: flex
+   margin-bottom: 65px
+   width: 100%
+   justify-content: center
+   padding: 20px 0 28px
+   border-radius: 19px
+   gap: 60px
+   background: url(../img/main-border.svg) center / cover no-repeat
+   background-color: var(--color-text-white)
+   &__item
+      position: relative
+      display: flex
+      align-items: center
+      justify-content: center
+      flex-direction: column
+      width: 95px
+      span
+         display: flex
+         font-size: clamp(32px, calc(25.6000px + 2.0000vw), 64px)
+         text-align: center
+         color: var(--color-text-red)
+         line-height: 29px
+         min-height: 87px
+         min-width: 90px
+         align-items: center
+         justify-content: center
+         &:after
+            content: ":"
+            font-family: 'Forum'
+            font-size: clamp(24px, calc(6.8571px + 2.9762vw), 64px)
+            font-weight: 400
+            color: var(--color-text-brown)
+            line-height: 29px
+            display: inline-flex
+            position: absolute
+            right: -41px
+            top: 28px
+      p
+         font-size: clamp(12px, calc(10.8000px + 0.3750vw), 18px)
+         text-align: center
+         color: var(--color-text-brown)
+         line-height: 29px
+         margin: -17px 0 0 -2px
+         font-style: italic
+      &:last-child
+         p 
+            margin-left: -6px
+         span
+            &:after
+               display: none
+.personal_greeting
+   background: var(--color-bg-secondary)
+   position: relative
+   padding: var(--space-personal-greeting-top) 0 var(--space-personal-greeting-bottom) 0
+   .title2 
+      font-size: clamp(32px, calc(25.6px + 2vw), 64px)
+      color: var(--color-text-black)
+      margin: 0 0 17px
+      span
+         display: block
+         font-size: clamp(96px, calc(89.6000px + 2.0000vw), 128px)
+         font-weight: 100
+         color: #a61c13
+         line-height: 17%
+         position: relative
+         left: -6px
+   .title3 
+      margin: 0
+      font-size: clamp(24px, calc(20.8px + 1vw), 40px)
+      line-height: 48px
+   &__box
+      position: relative
+      display: flex
+      align-items: flex-start
+      gap: 130px
+      justify-content: center
+      h2
+         font-size: clamp(24px, calc(-2.1429px + 4.5387vw), 85px)
+         line-height: 100%
+   &__content
+      width: 100%
+      max-width: 517px
+      margin-top: 32px
+   &__text
+      margin: 0
+      background: url("../img/main-border.svg") center / cover no-repeat
+      background-color: var(--color-text-white)
+      display: inline-flex
+      align-items: flex-start
+      justify-content: center
+      flex-direction: column 
+      border-radius: 10px
+      width: 100%
+      max-width: 631px
+      padding: 54px 48px 
+      position: relative
+      p 
+         font-size: clamp(16px, calc(14.4000px + 0.5000vw), 24px)
+         margin: 0
+         font-weight: 100
+         color: var(--color-text-black)
+         line-height: 39px
+      span 
+         color: var(--color-text-red)
+   &__pic1 
+      position: absolute
+      left: 577px
+      object-fit: cover
+      object-position: center
+      width: 232px
+      height: 191px
+      top: -80px
+   &__pic2
+      position: absolute
+      right: 50%
+      object-fit: cover
+      object-position: center
+      width: 312px
+      height: 58px
+      transform: translateX(50%)
+      top: -36px
+.wishlist
+   padding: 0px 0 66px 
+   background: var(--color-bg-secondary)
+   position: relative
+   h2
+      margin: 0 auto 5px
+      text-align: center
+   p
+      width: 100%
+      max-width: 1020px
+      margin: 0 auto 35px
+      text-align: center
+      color: var(--color-text-black)
+      font-size: clamp(14px, calc(12.8000px + 0.3750vw), 20px)
+      font-weight: 100
+      color: #1e1a16
+      line-height: 26px
+      letter-spacing: 0.8px
+   &__btn
+      background: var(--color-text-red)
+      display: flex
+      align-items: center
+      justify-content: center
+      margin: 0 auto
+      width: 181px
+      height: 54px
+      border-radius: 10px
+      font-size: 16px
+      color: var(--color-text-white) !important
+      &:hover
+         background: var(--color-text-black)
+         color: var(--color-text-white) !important
+   &__icon 
+      display: block
+      margin: 0 auto -41px
+      width: 195px
+      height: 125px
+      object-fit: cover
+      object-position: center
+.about
+   padding: var(--space-about-top) 0 var(--space-about-bottom) 0
+   &__wrap
+      position: relative
+      background: var(--color-bg)
+      z-index: 2
+      max-width: 1142px
+      width: 100%
+      margin: 0 auto
+   &__flex 
+      display: flex
+      justify-content: center
+      align-items: center
+      gap: 10px
+      margin-bottom: 40px
+   &__item 
+      position: relative
+      &:last-child
+         .about__fig 
+            top: -101px
+            left: -72px
+            width: 430px
+   &__fig
+      position: absolute
+      top: -80px
+      left: -177px
+      z-index: 1
+      width: 530px
+   &__pic
+      width: 248px
+      height: 249px
+      object-fit: cover
+      object-position: center
+      border-radius: 50% 
+      overflow: hidden
+      z-index: 2
+      position: relative
+   &__love 
+      object-fit: cover
+      object-position: center
+      width: 128px
+      height: auto
+      margin: 0 0px 0 21px
+      position: relative
+      left: -6px
+   &__text 
+      margin: 0 auto 
+      text-align: center
+      font-size: 24px
+      font-weight: 100
+      color: var(--color-text-black)
+      line-height: 195%
+   &__content
+      margin: 0 auto
+      .title2
+         margin: 0 auto 15px
+         text-align: center
+.faq
+   padding: var(--space-faq-top) 0 var(--space-faq-bottom) 0
+   h2 
+      line-height: 100%
+   &__wrap
+      gap: 52px
+      display: flex
+      justify-content: center
+      align-items: start
+   &__box
+      width: 100%
+      max-width: 564px
+      position: relative
+      img
+         width: 255px
+         height: 255px
+         object-fit: cover
+         object-position: center
+         position: relative
+         margin: -39px 0 0 auto
+         display: block
+   &__content
+      width: 100%
+      max-width: 47%
+   &__item
+      width: 100%
+      margin-bottom: 8px
+      position: relative
+      display: flex
+      align-items: flex-start
+      &:last-child
+         margin-bottom: 0
+      span
+         display: flex
+         align-items: center
+         justify-content: center
+         flex: 1 0 auto 
+         max-width: 62px
+         width: 62px
+         height: 62px
+         background: var(--color-text-white)
+         border: 2px solid rgba(192,57,43,0.17)
+         border-radius: 50%
+         font-size: clamp(32px, calc(31.2000px + 0.2500vw), 36px)
+         font-weight: 100
+         color: var(--color-text-red)
+         line-height: 100%
+         letter-spacing: 0.4px
+      &:last-child
+         .faq__info
+            padding-bottom: 0
+            border: none
+   &__info
+      width: 100%
+      max-width: 100%
+      margin-top: 19px
+      margin-left: 22px
+      padding-bottom: 17px
+      border-bottom: 1px solid #a6836a
+      h3
+         margin: 0 0 24.4px
+         font-size: clamp(19px, calc(16.4000px + 0.8125vw), 32px)
+         font-weight: 100
+         color: var(--color-text-red)
+         line-height: 26px
+         letter-spacing: 0.3px
+      p
+         margin: 0
+         font-size: clamp(14px, calc(12.8000px + 0.3750vw), 20px)
+         font-weight: 100
+         color: #1e1a16
+         line-height: 26px
+         letter-spacing: 0.2px
+.guest
+   padding: var(--space-guest-top) 0 var(--space-guest-bottom) 0
+   position: relative
+   background: var(--color-bg-secondary)
+   h2
+      color: var(--color-text-black)
+      text-align: left
+      margin: 0 auto 22px
+      line-height: 83%
+   &__sub
+      width: 100%
+      max-width: 100%
+      font-size: clamp(14px, calc(12.0000px + 0.6250vw), 24px)
+      color: var(--color-text-black)
+      line-height: 184%
+      margin: 0
+      &__item
+         width: 100%
+         padding: 15px 20px
+         text-align: left
+         background: none
+         border: none
+         cursor: pointer
+         transition: .2s
+         font-weight: 400
+         font-size: clamp(14px, calc(12.857px + 0.357vw), 18px)
+         line-height: 17px
+         letter-spacing: 0.05rem
+         &.active
+            color: var(--color-text-white)
+      &__text
+         flex: 1
+         min-width: 0
+         overflow: hidden
+         white-space: nowrap
+         text-overflow: ellipsis
+   &__bottom
+      margin-top: 18px
+      display: flex
+      justify-content: center
+      gap: 16px
+      .guest__item
+         width: 435px
+   &__wrap
+      position: relative
+      margin: 0 auto
+      width: 100%
+      justify-content: center
+      display: flex
+      max-width: 1268px
+      gap: 64px
+   &__pic 
+      position: absolute
+      top: 300px
+      left: 360px
+      object-fit: cover
+      object-position: center
+      width: 237px
+      height: 181px
+   &__area
+      flex: 1 0 auto
+      position: relative
+      z-index: 4
+      width: 100%
+      max-width: 559px
+   &__form
+      position: relative
+      z-index: 4
+      &_btn
+         margin: 25px 0 0
+         display: flex
+         align-items: center
+         justify-content: center
+         width: 316px
+         height: 54px
+         background: var(--color-text-red)
+         border-radius: 10px
+         font-size: 16px
+         color: var(--color-text-white)
+         line-height: 100%
+         transition: 0.5s
+         cursor: pointer
+         border: none
+         font-family: 'Zing Script Rust SB Demo Base', sans-serif
+         &:hover
+            background: var(--color-text-black)
+            color: var(--color-text-white)
+   &__radios
+      display: flex
+      flex-direction: column
+      gap: 20px
+      padding-left: 0px
+   &__radio
+      display: flex
+      align-items: center
+      cursor: pointer
+      user-select: none
+      width: auto
+      input
+         position: absolute
+         width: 1px
+         height: 1px
+         opacity: 0
+         overflow: hidden
+      &-box
+         position: relative
+         flex-shrink: 0
+         transition: .3s
+         order: 1
+         width: 18px
+         height: 18px
+         border: 1px solid #767676
+         max-width: 18px 
+         border-radius: 50%
+         box-sizing: border-box
+         &:before
+            content: ""
+            position: absolute
+            background-size: 100% !important
+            inset: 0
+            background: url("../img/check2.svg") center / contain no-repeat
+            transform: scale(0)
+            transition: .25s
+      input:checked + .guest__radio-box
+         background: var(--color-text-black)
+         &:before
+            transform: scale(0.5)
+      &-text
+         order: 2
+         margin-left: 10px
+         font-size: clamp(11.2px, calc(10.000px + 0.208vw), 14px)
+         color: #2c2420
+         line-height: 29px
+   &__content
+      flex-wrap: wrap
+      display: none
+      width: 100%
+      max-width: 100%
+      margin-top: 29px
+      &.active
+         display: flex
+   &__item
+      background: var(--color-text-white)
+      padding: 25px
+      border-radius: 12px
+      overflow: hidden
+      width: 100%
+      min-width: 0
+      h3
+         margin-top: 0
+         margin-bottom: 15px
+         font-size: clamp(20px, calc(19.6px + 0.125vw), 22px)
+         font-weight: 100
+         color: #2c2420
+         line-height: 100%
+         font-family: 'Zing Script Rust SB Demo Base', sans-serif
+         span
+            margin-left: -3px
+            color: var(--color-text-red)
+            font-size: 11px
+            font-weight: 100
+            line-height: 17px
+            text-transform: uppercase
+      &--text
+         .guest__input
+            width: 100%
+            padding-left: 15px
+            height: 50px
+            background: rgba(224,210,200,0.31)
+            border-radius: 8px
+            font-size: clamp(14px, calc(13.8000px + 0.0625vw), 15px)
+            color: #000
+            border: 1px solid rgba(224,210,200,0.31)
+            font-family: 'Zing Script Rust SB Demo Base', sans-serif
+            &::placeholder
+               color: rgba(44,36,32,0.50) !important
+            &:focus
+               border: 1px solid var(--color-text-red)
+         h3 
+            flex-direction: column-reverse
+            display: flex
+            font-size: 16px
+            span 
+               margin-left: 0
+               margin-bottom: 5px
+      &--presence
+         h3 
+            flex-direction: column-reverse
+            display: flex
+            font-size: 16px
+            span 
+               margin-left: 0
+               margin-bottom: 5px
+         .guest__radios
+            display: flex
+            flex-direction: row
+            flex-wrap: wrap
+            align-items: center
+            gap: 12px
+            padding-left: 0
+            margin-top: 20px
+         .guest__radio
+            position: relative
+            display: inline-flex
+            align-items: center
+            justify-content: center
+            width: auto
+            min-width: 134px
+            min-height: 51px
+            padding: 0
+            cursor: pointer
+            input
+               position: absolute
+               width: 1px
+               height: 1px
+               opacity: 0
+               margin: 0
+               padding: 0
+               overflow: hidden
+            .guest__radio-box
+               display: none
+            .guest__radio-text
+               display: flex
+               align-items: center
+               justify-content: center
+               width: 100%
+               height: 51px
+               margin: 0
+               border: 2px solid var(--color-text-red)
+               border-radius: 8px
+               background: transparent
+               color: var(--color-text-red)
+               box-sizing: border-box
+               text-align: center
+               transition: background .3s, color .3s, border-color .3s
+               font-size: clamp(14px, calc(13.1429px + 0.1488vw), 16px)
+               line-height: 100% 
+            &:hover
+               .guest__radio-text
+                  background: var(--color-text-black)
+                  border: 2px solid var(--color-text-black)
+                  color: var(--color-text-white)
+            input:checked + .guest__radio-text
+               background: var(--color-text-red)
+               border-color: var(--color-text-red)
+               color: var(--color-text-white)
+            input:focus-visible + .guest__radio-text
+               outline-offset: 3px
+      &--radio
+         position: relative
+         h3
+            margin-bottom: 23px
+      &--checkbox
+         h3
+            span
+               display: block
+               margin-left: 0
+               margin-bottom: 20px
+               margin-top: 2px
+               font-size: 12px
+               font-weight: 100
+               color: #b0a89f
+               line-height: 18px
+               text-transform: none
+      &--checkbox
+         h3
+            span
+               display: block
+               margin-left: 0
+               margin-bottom: 20px
+               margin-top: 2px
+      &--textarea
+          position: relative
+          .guest__field textarea
+             display: block
+             width: 100%
+             max-width: 100%
+             min-height: 108px
+             padding: 18px 15px
+             border: 1px solid var(--color-text-black)
+             border-radius: 0
+             box-sizing: border-box
+             resize: vertical
+             &:focus
+                border-color: lightgrey
+      &--allergy
+         position: relative
+         .guest__field textarea
+            width: 100%
+            padding: 18px 0 0 17px
+            min-height: 108px
+            border: 1px solid #f5f1ee
+            background: #f5f1ee
+            border-radius: 8px
+            height: auto
+            box-sizing: border-box
+            &::placeholder
+               color: #4a4a4a !important
+            &:focus
+               border: 1px solid var(--color-text-red)
+      &--wishes
+         margin: 0 auto
+         .guest__field textarea
+            width: 100%
+            padding: 18px 0 0 15px
+            min-height: 108px
+            height: auto
+            box-sizing: border-box
+            width: 100%
+            height: 108px
+            border: 1.5px solid #f6e1c9
+            border-radius: 8px
+            &::placeholder
+               color: #4a4a4a !important
+            &:focus
+               border: 1.5px solid var(--color-text-red)
+   &__checks
+      display: flex
+      flex-direction: column
+      gap: 16px 0
+      padding-left: 0px
+   &__check
+      display: flex
+      align-items: center
+      cursor: pointer
+      user-select: none
+      input
+         display: none
+      &-box
+         position: relative
+         flex-shrink: 0
+         transition: .3s
+         order: 1
+         box-sizing: border-box
+         width: 18px
+         height: 18px
+         border: 1px solid #767676
+         border-radius: 2px
+         &:before
+            content: ""
+            position: absolute
+            inset: 0
+            background: url("../img/check2.svg") center / contain no-repeat
+            transform: scale(0)
+            transition: .25s
+      input:checked + .guest__check-box
+         background: var(--color-text-black)
+         &:before
+            transform: scale(0.7)
+      &-text
+         order: 2
+         margin-left: 10px
+         font-size: clamp(11.2px, calc(10.000px + 0.208vw), 14px)
+         color: #2C2420
+         line-height: 29px
+   &__field
+      textarea::-webkit-input-placeholder
+         color: rgba(44, 36, 32, 0.5) !important
+      textarea::-moz-placeholder
+         color: rgba(44, 36, 32, 0.5) !important
+      textarea:-ms-input-placeholder
+         color: rgba(44, 36, 32, 0.5) !important
+      textarea:-moz-placeholder
+         color: rgba(44, 36, 32, 0.5) !important
+      textarea
+         min-height: 310px
+         padding: 26px 20px 0 20px
+         resize: none
+         outline: none
+         transition: .3s
+         border: 1px solid rgba(255,255,255,0.30)
+         box-sizing: border-box
+         width: 298.67px
+         background: var(--color-text-white)
+         border: 1px solid #E3DBC6
+         border-radius: 10px
+         font-size: 14px
+         font-family: 'Zing Script Rust SB Demo Base', sans-serif
+         line-height: 110%
+         &::placeholder
+            color: rgba(44, 36, 32, 0.5)  !important
+         &:focus
+            border: 1px solid var(--color-text-red)
+   &__input
+      font-size: clamp(11.2px, calc(10.000px + 0.208vw), 14px)
+      font-weight: 400
+      color: #4a4a4a
+      line-height: 29px
+      color: var(--color-text-black)
+      &:focus
+         border: 1px solid var(--color-text-yellow)
+   &__grid
+      display: flex
+      gap: 19px 18px
+      align-items: start
+      width: 100%
+   &__column
+      display: flex
+      flex-direction: column
+      gap: 19.5px
+      width: 50%
+      min-width: 0
+   &__top 
+      display: flex
+      justify-content: center
+      gap: 24px
+      margin-bottom: 34px
+      .guest__item 
+         &:first-child
+            width: 293px
+         &:nth-child(2)
+            width: 330px
+   &__name 
+      margin: 0 0 24px
+      font-size: clamp(20px, calc(19.2000px + 0.2500vw), 24px)
+      font-weight: 100
+      color: var(--color-text-brown)
+      line-height: 26px
+.contact
+   padding: var(--space-contact-top) 0 var(--space-contact-bottom) 0
+   &__title 
+      display: flex
+      align-items: center
+      img 
+         object-fit: cover
+         object-position: center
+         width: 178px
+         height: 190px
+         margin-right: 9px
+   &__wrap
+      display: flex
+      align-items: center
+      justify-content: center
+      gap: 80px
+   h2
+      font-size: clamp(32px, calc(18.2857px + 2.3810vw), 64px)
+      font-weight: 700
+      color: var(--color-text-brown)
+      line-height: 118%
+      width: 100%
+      max-width: 390px
+      text-transform: none
+   &__content
+      width: 100%
+      max-width: 42.5%
+      margin-top: 10px
+      p
+         margin: 0 0 32px
+         font-size: clamp(14px, calc(12.0000px + 0.6250vw), 24px)
+         color: var(--color-text-black)
+         line-height: 120%
+         font-style: italic
+   &__info
+      display: flex
+      align-items: center
+      a
+         font-size: clamp(20px, calc(11.4286px + 1.4881vw), 40px)
+         font-weight: 800
+         color: var(--color-text-black)
+         line-height: 100%
+      span
+         display: block
+         margin-left: 8px
+         color: var(--color-text-red)
+         font-size: clamp(20px, calc(11.4286px + 1.4881vw), 40px)
+         font-weight: 800
+         line-height: 100%
+.footer
+   padding: var(--space-footer-top) 0 var(--space-footer-bottom) 0
+   &__fig3
+      position: absolute
+      top: 146px
+      object-fit: cover
+      object-position: center
+      left: 41px
+      width: 500px
+      height: auto
+   &__fig4
+      position: absolute
+      object-fit: cover
+      object-position: center
+      top: 49px
+      right: 113px
+      width: 400px
+      height: auto
+   &__photo1 
+      position: absolute
+      top: 215px
+      object-fit: cover
+      object-position: center
+      left: 208px
+      border-radius: 50% 
+      overflow: hidden
+      width: 248px
+      height: 249px
+   &__photo2
+      position: absolute
+      top: 126px
+      right: 219px
+      width: 254px
+      height: 252px
+      object-fit: cover
+      object-position: center
+      border-radius: 50% 
+      overflow: hidden
+   &__fig 
+      object-fit: cover
+      object-position: center
+      position: absolute
+      top: 352px
+      left: 469px
+      width: 208px
+      height: 142px
+   &__box
+      position: relative
+   &__letters
+      font-size: clamp(128px, calc(63.6000px + 20.1250vw), 450px)
+      margin: 0 auto
+      text-align: center
+      line-height: 100%
+      color:  var(--color-text-red)
+      z-index: 2
+      margin: 0
+      position: relative
+      left: 45px
+      span
+         position: relative
+         top: 116px
+         left: -103px
+   &__block
+      font-size: clamp(24px, calc(16.0000px + 2.5000vw), 64px)
+      text-align: center
+      color: var(--color-text-brown)
+      line-height: 100%
+      z-index: 2
+      width: 100%
+      max-width: 1066px
+      margin: 99px auto 0
+.map
+   &__top
+      padding: 129px 35px 124px
+      overflow: hidden
+      background: var(--color-bg-secondary)
+      width: 100%
+      max-width: 415px
+      height: 730px
+      position: absolute
+      bottom: 0px
+      left: 110px
+      z-index: 5
+      .title2
+         text-transform: none
+         font-size: clamp(32px, calc(25.1429px + 1.1905vw), 48px)
+         color: var(--color-text-brown)
+         line-height: 117%
+         margin: 0 auto 36px
+         text-align: left
+   &__data
+      display: none
+   &__tabs
+      display: flex
+      flex-direction: column
+      gap: 16px
+      overflow-y: auto
+      max-height: 100%
+      button
+         width: 100%
+         max-width: 100%
+         padding: 19px 0
+         border-radius: 10px
+         box-shadow: 0px 4px 16px 0px rgba(166,131,106,0.39)
+         overflow-wrap: anywhere
+         box-sizing: border-box
+         display: flex
+         justify-content: center
+         align-items: center
+         line-height: 100%
+         text-align: center
+         background: var(--color-text-white) 
+         transition: 0.5s
+         font-size: 16px
+         color: var(--color-text-black)
+         border: none
+         font-family: 'Zing Script Rust SB Demo Base', sans-serif
+         &.active
+            color: var(--color-text-white) !important
+            background: var(--color-text-red)
+            opacity: 1 !important
+         &:hover
+            color: var(--color-text-white)
+            background: var(--color-text-black)
+   &__wrap
+      position: relative
+   &__pic
+      position: absolute
+      right: -221px
+      top: 50px
+      z-index: 2
+      width: 330px
+      height: 385px
+      object-position: center
+      object-fit: cover
+   &__fig
+      position: absolute
+      left: -319px
+      top: 0px
+      height: auto
+      z-index: 0
+      width: 495px
+   h2
+      margin: 0 auto 20px
+      font-size: clamp(22px, calc(14.286px + 1.339vw), 40px)
+      text-align: center
+   &__name
+      display: block
+      margin-top: 0
+      margin-bottom: 8px
+      color: var(--color-text-red)
+      font-size: clamp(19.2px, calc(17.143px + 0.357vw), 24px)
+      line-height: 26px
+   &__canvas
+      .container
+         position: relative
+      #map-canvas
+         width: 100%
+         height: 730px
+         overflow: hidden
+         touch-action: pan-x pan-y !important
+         *
+            touch-action: pan-x pan-y !important
+   .map-marker
+      position: relative
+      transform: translate(-40px, -100%)
+      transition: .3s
+      width: 45px
+      z-index: 1
+      &__icon
+         position: relative
+         display: block
+         width: 45px
+         height: auto
+         padding: 0
+         border: 0
+         cursor: pointer
+         background: transparent
+         z-index: 2
+         img
+            display: block
+            width: 100%
+            height: auto
+      &__info
+         display: none
+         position: absolute
+         bottom: calc(100% + 15px)
+         left: -40px
+         transform: none
+         padding: 20px 26px
+         width: 377px
+         height: auto
+         box-sizing: border-box
+         overflow: hidden
+         background: rgba(255,255,255,0.94)
+         border-radius: 12px
+         z-index: 1
+         h3
+            margin-top: 0
+            margin-bottom: 0
+            font-size: clamp(14px, calc(12.2857px + 0.2976vw), 18px)
+            line-height: 126%
+            color: var(--color-text-brown)
+         p
+            margin: 0
+            font-size: clamp(14px, calc(12.2857px + 0.2976vw), 18px)
+            line-height: 126%
+            color: var(--color-text-brown)
+      &.active
+         z-index: 200
+         .map-marker__info
+            display: block
+.site-overlay
+   position: fixed
+   inset: 0
+   background: linear-gradient(0deg, rgba(0,0,0,.7), rgba(0,0,0,.7))
+   opacity: 0
+   visibility: hidden
+   pointer-events: none
+   z-index: 2100
+   transition: opacity .3s ease, visibility .3s ease
+   &.active
+      opacity: 1
+      visibility: visible
+      pointer-events: auto
+.glightbox-container, .glightbox-clean .gslide-media, .glightbox-mobile .glightbox-container
+   z-index: 2200 !important
+.dress
+   position: relative
+   padding: var(--space-dress-top) 0 var(--space-dress-bottom) 0
+   &__wrap
+      position: relative
+      .title2 
+         text-align: center
+         margin: 0 auto 31px
+   &__photos
+      display: flex
+      flex-wrap: wrap
+      gap: 20px 50px
+      justify-content: center
+      a
+         display: flex
+         align-items: center
+         justify-content: center
+         width: 19.7%
+         height: 274px
+         border-radius: 50%
+         overflow: hidden
+         img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            object-position: center
+   &__info
+      width: 100%
+      max-width: 386px
+      margin-top: 23px
+      h3
+         padding-left: 10px
+         font-size: clamp(18px, calc(13.7143px + 0.7440vw), 28px)
+         font-weight: 700
+         color: var(--color-text-white)
+         line-height: 32px
+         margin: 0 0 73px
+         width: 100%
+         max-width: 316px
+   &__colors
+      display: flex
+      flex-wrap: wrap
+      gap: 19px 22px
+      justify-content: center
+      margin-bottom: 53px
+   &__item
+      width: 94px
+      p
+         text-align: center
+         font-size: clamp(14px, calc(13.6000px + 0.1250vw), 16px)
+         font-weight: 100
+         color: #1e1a16
+         line-height: 26px
+         letter-spacing: 0.02px
+         margin: 10px auto 0
+      div
+         margin: 0 auto
+         border-radius: 50%
+         width: 56px
+         height: 56px
+         border: 1px solid var(--color-text-white)
+         box-shadow: 0px 2px 4px -2px rgba(0,0,0,0.10), 0px 4px 6px -1px rgba(0,0,0,0.10)
+   &__text
+      width: 100%
+      max-width: 1256px 
+      margin: 0 auto 27px
+      p
+         margin: 0 0 15px
+         font-size: clamp(14px, calc(12.0000px + 0.6250vw), 24px)
+         font-weight: 100
+         text-align: center
+         color: var(--color-text-black)
+         line-height: 198%
+         &:last-child
+            margin-bottom: 0
+   &__title 
+      margin: 0 0 33px
+      font-size: clamp(18px, calc(15.2000px + 0.8750vw), 32px)
+      font-weight: 100
+      text-align: center
+      color: var(--color-text-red)
+      line-height: 26px
+      letter-spacing: 0.8px
+.story
+   padding: var(--space-story-top) 0 var(--space-story-bottom) 0
+   &__wrap
+      position: relative
+   &__title 
+      display: flex
+      align-items: center
+      img 
+         position: relative
+         margin-right: 23px
+         top: -13px
+         object-fit: cover
+         object-position: center
+         width: 135px
+         height: 131px
+   h2
+      margin-bottom: 4px
+   p
+      width: 100%
+      max-width: 1021px
+      margin: 0 0 68px
+      line-height: 200%
+      font-size: clamp(14px, calc(12.0000px + 0.6250vw), 24px)
+      color: var(--color-text-black)
+      font-weight: 100
+   .swiper-gallery
+      width: 93%
+      .swiper-slide
+         a
+            display: flex
+            align-items: center
+            justify-content: center
+            position: relative
+            img
+               width: 87.5%
+               overflow: hidden
+               height: 271px
+               border-radius: 50% 
+               object-fit: cover
+               object-position: center
+               margin-left: auto
+               position: relative
+               z-index: 2
+            &:before 
+               content: ""
+               display: block
+               height: 301px
+               width: 314px
+               background: url(../img/story-bg.webp) center / cover no-repeat
+               position: absolute
+               top: 0
+               left: 0
+               z-index: 0
+   .swiper-pagination-progressbar
+      position: relative
+      z-index: 2
+      height: 11px
+      background: var(--color-bg-secondary)
+      border-radius: 20px
+      overflow: hidden
+      margin-top: 74px
+   .swiper-pagination-progressbar .swiper-pagination-progressbar-fill
+      background: var(--color-text-red)
+      border-radius: 20px
+      overflow: hidden
+.main__btn
+   display: none
+.timing
+   position: relative
+   background: var(--color-bg-secondary)
+   padding: var(--space-timing-top) 0 var(--space-timing-bottom) 0
+   h2
+      margin: 0 auto 12px
+      text-align: center
+   &__text
+      text-align: center
+      margin: 0 auto 39px
+      color: var(--color-text-black)
+      font-size: clamp(14px, calc(12.0000px + 0.6250vw), 24px)
+      font-weight: 100
+      text-align: center
+      line-height: 140%
+      width: 100%
+      max-width: 1200px
+   &__item
+      background: url("../img/main-border.svg") center / cover no-repeat
+      background-color: var(--color-text-white)
+      display: flex
+      align-items: center
+      margin-bottom: 23px
+      padding: 18px 0
+      border-radius: 19px
+      overflow: hidden
+      span
+         position: relative
+         left: 7px
+         width: 160px
+         display: flex
+         align-items: center
+         justify-content: center
+         font-size: clamp(17px, calc(12.4000px + 1.4375vw), 40px)
+         font-weight: 100
+         color: var(--color-text-red)
+         line-height: 100%
+      &:last-child
+         margin-bottom: 0
+   &__info
+      padding: 12px 0 16px 12px
+      width: 100%
+      max-width: 477px
+      h3
+         margin: 0 0 4px
+         font-size: clamp(18px, calc(16.0000px + 0.6250vw), 28px)
+         color: var(--color-text-red)
+         line-height: 100%
+      p
+         font-size: clamp(12px, calc(10.4000px + 0.5000vw), 20px)
+         color: var(--color-text-black)
+         line-height: 138%
+         margin: 0
+      a
+         font-size: clamp(12px, calc(10.4000px + 0.5000vw), 20px)
+         color: var(--color-text-black)
+         line-height: 100%
+         width: fit-content
+         max-width: 100%
+         overflow-wrap: anywhere
+         white-space: normal
+         border-bottom: 1px solid var(--color-text-black)
+         margin-top: 11px
+         display: block
+         &:hover
+            color: var(--color-text-red)
+            border-bottom: 1px solid var(--color-text-red)
+   &__content
+      width: 100%
+      max-width: 673px
+      margin: 0 auto
+      display: none
+      overflow-y: auto
+      max-height: 744px
+      scrollbar-width: thin
+      scrollbar-color: transparent transparent
+      &.active
+         display: block
+   .container 
+      position: relative
+   &__tabs
+      display: flex
+      justify-content: center
+      gap: 20px
+      margin-bottom: 47px
+      overflow-x: auto
+   &__pic 
+      object-fit: cover
+      object-position: center
+      position: absolute
+      bottom: -42px
+      right: -166px
+      width: 361px
+      height: 297px
+   &__btn
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 168px
+      min-width: 168px
+      height: 58px
+      background: var(--color-text-white)
+      color: var(--color-text-red)
+      transition: 0.5s
+      border-radius: 19px
+      font-size: clamp(14px, calc(12.8000px + 0.3750vw), 20px)
+      line-height: 100%
+      border: none
+      &.active
+         background:  var(--color-text-red)
+         color: var(--color-text-white)
+         opacity: 1 !important
+      &:hover
+         opacity: 0.7
+.menu
+   display: none
+.menu__btn
+   display: none
+   width: 40px
+   height: 40px
+   top: 0px
+   right: 0
+   position: absolute
+   border-radius: 6px 
+   overflow: hidden
+   background: url(../img/menu.svg) center / contain no-repeat
+   background-color: var(--color-text-red)
+   background-size: auto
+.menu__close
+    background: url(../img/close.svg) center / contain no-repeat
+.menu ul li a
+   font-size: clamp(14px, 14px, 14px)
