@@ -19,9 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
 // =====================================================
 
 function initMenu() {
-	const menu = document.querySelector('.menu');
-	const menuBtn = document.querySelector('.menu__btn');
-	const closeBtn = document.querySelector('.menu__close');
+	const menu = document.querySelector('.template-menu');
+	const menuBtn = document.querySelector('.template-menu__btn');
+	const closeBtn = document.querySelector('.template-menu__close');
 
 	if (!menu || !menuBtn) return;
 
